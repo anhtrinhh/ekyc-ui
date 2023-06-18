@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="py-5"></div>
+    <div class="register-box">
+        <div class="stepper">
+            <ul class="items">
+                <li class="item active">
+                    <a class="item-link">Thong tin ca nhan</a>
+                </li>
+                <li class="item">
+                    <a class="item-link">Dang ky dich vu</a>
+                </li>
+                <li class="item">
+                    <a class="item-link">Ky hop dong</a>
+                </li>
+            </ul>
+        </div>
+        <div class="py-5"></div>
+        <div class="register-sections">
+            <div class="section-left">
+                <div class="section-box" style="box-shadow: none; background-color: transparent;">
+                    <div class="vertical-stepper">
+                        <ul class="items">
+                            <li class="item active">
+                                <a class="item-link">Thong tin ca nhan</a>
+                            </li>
+                            <li class="item active">
+                                <a class="item-link">Chon loai tai khoan</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Xac minh giay to</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Bo sung thong tin ca nhan</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Xac minh khuon mat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="section-box">
+                    <div class="register-form-wrapper">
+                        <form class="register-form" id="user-basic-info-form">
+                            <div class="register-form-group">
+                                <label>Ho va ten <span class="register-text-danger">*</span></label>
+                                <div class="input-wrapper">
+                                    <input type="text" class="register-input error" placeholder="Dien ho va ten">
+                                    <span class="register-text-danger">Co loi xay ra</span>
+                                </div>
+                            </div>
+                            <div class="register-form-group">
+                                <label>So dien thoai <span class="register-text-danger">*</span></label>
+                                <div class="input-wrapper">
+                                    <input type="text" class="register-input" placeholder="Dien so dien thoai">
+                                    <span class="register-text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="register-form-group">
+                                <label>Email <span class="register-text-danger">*</span></label>
+                                <div class="input-wrapper">
+                                    <input type="email" class="register-input" placeholder="Dien email">
+                                    <span class="register-text-danger"></span>
+                                </div>
+                                <div class="register-form-group register-form-check" id="receive-email-checkbox">
+                                    <input type="checkbox" class="register-input-check" id="receiveEmailCheckbox">
+                                    <label for="receiveEmailCheckbox">Nhan email</label>
+                                </div>
+                            </div>
+                            <div class="register-form-group">
+                                <label>Ma nhan vien tu van</label>
+                                <div class="input-wrapper">
+                                    <input type="text" class="register-input" placeholder="Dien ma nhan vien tu van">
+                                    <span class="register-text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="register-form-group register-form-check">
+                                <input type="checkbox" class="register-input-check" id="confirmInfoCheckbox">
+                                <label class="register-input-check-desc" for="confirmInfoCheckbox">
+                                    Tôi cam kết thông tin cung cấp là chính xác, hợp pháp và hoàn toàn chịu trách nhiệm.
+                                    Tôi đồng ý nhận các thông tin từ FPTS gửi đến số điện thoại, email, địa chỉ đã đăng
+                                    ký và cho phép FPTS sử dụng hoặc cung cấp các thông tin của Tôi bao gồm thông tin về
+                                    số điện thoại, email, địa chỉ và các thông tin liên quan cho Bên thứ ba cung cấp
+                                    dịch vụ hỗ trợ giao dịch để kiểm tra, xử lý, tổng hợp thông tin/dữ liệu và các hoạt
+                                    động khác
+                                </label>
+                            </div>
+                            <div class="register-form-group btns">
+                                <a class="register-btn dark">Quay lai</a>
+                                <button class="register-btn success">Tiep tuc</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

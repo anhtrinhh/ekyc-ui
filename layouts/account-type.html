@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="py-5"></div>
+    <div class="register-box">
+        <div class="stepper">
+            <ul class="items">
+                <li class="item active">
+                    <a class="item-link">Thong tin ca nhan</a>
+                </li>
+                <li class="item">
+                    <a class="item-link">Dang ky dich vu</a>
+                </li>
+                <li class="item">
+                    <a class="item-link">Ky hop dong</a>
+                </li>
+            </ul>
+        </div>
+        <div class="py-5"></div>
+        <div class="register-sections">
+            <div class="section-left">
+                <div class="section-box" style="box-shadow: none; background-color: transparent;">
+                    <div class="vertical-stepper">
+                        <ul class="items">
+                            <li class="item active">
+                                <a class="item-link">Thong tin ca nhan</a>
+                            </li>
+                            <li class="item active">
+                                <a class="item-link">Chon loai tai khoan</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Xac minh giay to</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Bo sung thong tin ca nhan</a>
+                            </li>
+                            <li class="item">
+                                <a class="item-link">Xac minh khuon mat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="section-box">
+                    <div class="register-form-wrapper">
+                        <form class="register-form" id="account-info-form">
+                            <p class="register-form-label">1. Quy khach la nha dau tu <span class="register-text-danger">*</span></p>
+                            <div class="register-form-group">
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="radio" checked name="userType" class="register-input-check"
+                                        id="userTypePersonalRadio">
+                                    <label for="userTypePersonalRadio">Ca nhan</label>
+                                </div>
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="radio" name="userType" class="register-input-check"
+                                        id="userTypeBusinessRadio">
+                                    <label for="userTypeBusinessRadio">To chuc</label>
+                                </div>
+                            </div>
+                            <p class="register-form-label">2. Quoc tich cua quy khach <span class="register-text-danger">*</span></p>
+                            <div class="register-form-group">
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="radio" checked name="nationality" class="register-input-check"
+                                        id="nationalityRadio1">
+                                    <label for="nationalityRadio1">Viet Nam</label>
+                                </div>
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="radio" name="nationality" class="register-input-check"
+                                        id="nationalityRadio2">
+                                    <label for="nationalityRadio2">Nuoc ngoai</label>
+                                </div>
+                            </div>
+                            <p class="register-form-label">3. Chon loai tai khoan <span class="register-text-danger">*</span></p>
+                            <div class="register-form-group">
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="checkbox" checked name="accountType" class="register-input-check"
+                                        id="accountTypeCheckbox1">
+                                    <label for="accountTypeCheckbox1">Thong thuong</label>
+                                </div>
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="checkbox" checked name="accountType" class="register-input-check"
+                                        id="accountTypeCheckbox2">
+                                    <label for="accountTypeCheckbox2">Phai sinh</label>
+                                </div>
+                                <div class="register-form-group register-form-check register-col-xs-4">
+                                    <input type="checkbox" checked name="accountType" class="register-input-check"
+                                        id="accountTypeCheckbox3">
+                                    <label for="accountTypeCheckbox3">Ky quy</label>
+                                </div>
+                            </div>
+                            <p class="register-form-label">4. Ma nguoi gioi thieu (neu co)</p>
+                            <div class="register-form-group">
+                                <div class="register-form-group register-form-check register-col-xs-6">
+                                    <input style="width: 100%;" type="text" class="register-input" placeholder="Dien ma nguoi gioi thieu">
+                                </div>
+                            </div>
+                            <div class="register-form-group btns">
+                                <a class="register-btn dark">Quay lai</a>
+                                <button class="register-btn success" disabled>Tiep tuc</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
