@@ -380,15 +380,15 @@
 }
 
 .register-card {
-    box-shadow: 0 4px 8px 3px rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.3);
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .3);
     width: 100%;
 }
 
 .register-card .register-card-header {
     padding: 15px 0;
     background-color: #ffffff;
-    border-bottom: 1px solid rgba(0,0,0,.125);
-} 
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
 
 .register-card-title {
     text-align: center;
@@ -403,6 +403,55 @@
     background-color: #f8f9fa;
     padding: 10px 14px;
 }
+
+.id-card-area {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.id-card-area::before {
+    content: '';
+    padding-top: 60%;
+    position: relative;
+    display: block;
+}
+
+.id-card-area .id-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.id-card-area .id-card-region {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-width: 18px 30px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#btn-capture-front-id,
+#btn-capture-back-id {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.id-card-area img {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    z-index: 10;
+}
+
 
 @media (min-width: 576px) {
     .register-box {
@@ -441,13 +490,17 @@
     .register-col-sm-4 {
         width: 33.33%;
     }
-    
+
     .register-col-sm-6 {
         width: 50%
     }
 
     .register-col-sm-12 {
         width: 100%
+    }
+
+    .id-card-area .id-card-region {
+        border-width: 30px 50px;
     }
 }
 
@@ -459,7 +512,7 @@
     }
 
     .register-sections .section-left {
-        width: 58%;
+        width: 40%;
     }
 
     .register-sections .section-rigth {
@@ -501,7 +554,7 @@
         flex-direction: unset !important;
         gap: 0.6rem !important;
     }
-    
+
     .register-form-group .register-form-check {
         margin-bottom: unset;
     }
@@ -509,7 +562,7 @@
     #receive-email-checkbox label {
         max-width: 80px;
     }
-    
+
     .register-form .btns {
         flex-direction: row;
         justify-content: space-between;
@@ -522,13 +575,21 @@
     .register-col-md-4 {
         width: 33.33%;
     }
-    
+
     .register-col-md-6 {
         width: 50%
     }
 
     .register-col-md-12 {
         width: 100%
+    }
+
+    .register-card .register-card-body {
+        padding: 5px 8px;
+    }
+
+    .id-card-area .id-card-region {
+        border-width: 6px 10px;
     }
 
 }
@@ -567,7 +628,7 @@
         padding: 10px;
         font-size: 14px;
     }
-    
+
     .register-form-group label {
         font-size: 14px;
     }
@@ -611,7 +672,7 @@
     .register-col-lg-4 {
         width: 33.33%;
     }
-    
+
     .register-col-lg-6 {
         width: 50%
     }
@@ -619,7 +680,15 @@
     .register-col-lg-12 {
         width: 100%
     }
-    
+
+    .register-card .register-card-body {
+        padding: 10px 14px;
+    }
+
+    .id-card-area .id-card-region {
+        border-width: 12px 20px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -639,10 +708,11 @@
         padding: 12px;
         font-size: 16px;
     }
-    
+
     .register-form-group label {
         font-size: 16px;
     }
+
     .register-form-group {
         margin-bottom: 30px;
     }
@@ -674,13 +744,17 @@
     .register-col-xl-4 {
         width: 33.33%;
     }
-    
+
     .register-col-xl-6 {
         width: 50%
     }
 
     .register-col-xl-12 {
         width: 100%
+    }
+
+    .id-card-area .id-card-region {
+        border-width: 30px 50px;
     }
 }
 
@@ -692,7 +766,7 @@
     .register-col-xxl-4 {
         width: 33.33%;
     }
-    
+
     .register-col-xxl-6 {
         width: 50%
     }
